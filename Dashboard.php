@@ -68,12 +68,10 @@ td {
 	text-align: center;
 	font-weight: 800;
 	font-size: 8vh;
-	color: #53c3c3;
+	color: #8caa09;
 }
-
 </style>
 </head>
-
 <body>
 <?php
 
@@ -266,7 +264,7 @@ $dataPoints = array();
 	</tr>
 	<tr>	
 			
-		<td class="testdiff" style="<?php echo($product['verschil'] < 0 ? 'color:#aa0909' : 'color:#8caa09'); ?>">
+		<td class="testdiff" style="<?php echo($product['verschil'] < 1 ? 'color:#aa0909' : 'color:#8caa09'); ?>">
 		<?php $result = $conn->query($sqlDifference);
 	if ($result->num_rows > 0) {
 		while($row = $result->fetch_assoc()) {
